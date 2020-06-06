@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.2 on win32)" generated="20200526 01:24:36.126" rpa="false">
+<suite id="s1" name="TC1" source="C:\Users\suciy\PycharmProjects\QA_1CMVN\TestCases\TC1.robot">
+<test id="s1-t1" name="RegisterTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://1cm.vn/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200526 01:24:36.426" level="INFO">Opening browser 'chrome' to base url 'https://1cm.vn/'.</msg>
+<status status="PASS" starttime="20200526 01:24:36.426" endtime="20200526 01:24:47.735"></status>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="name-home"]</arg>
+</arguments>
+<msg timestamp="20200526 01:24:47.736" level="INFO">Clicking link 'xpath://*[@id="name-home"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200526 01:24:48.102" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20200526 01:24:47.764" endtime="20200526 01:24:48.102"></status>
+</kw>
+<msg timestamp="20200526 01:24:48.106" level="FAIL">Link with locator 'xpath://*[@id="name-home"]' not found.</msg>
+<status status="FAIL" starttime="20200526 01:24:47.736" endtime="20200526 01:24:48.106"></status>
+</kw>
+<status status="FAIL" starttime="20200526 01:24:36.425" endtime="20200526 01:24:48.107" critical="yes">Link with locator 'xpath://*[@id="name-home"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20200526 01:24:36.130" endtime="20200526 01:24:48.109"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TC1">TC1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
